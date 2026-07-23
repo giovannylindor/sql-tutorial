@@ -294,6 +294,23 @@ CROSS JOIN TableB
 ```
 
 
-**Using Functions to Aggregste Data** 
+**Using Functions to Aggregate Data** 
 
-- 
+Aggregate Functions offered by SQL help to return a single relavent value 
+
+Some of these Functions Are:
+-  `SUM`
+- `MIN`
+- `MAX`
+
+These would be apart of the `SELECT` statement 
+Ex: `SELECT MAX(users.age) FROM users`
+
+* the funcs will operate on single column unless you include `*` which includes all rows 
+
+* `AS` is often used as an alias to rename columns or aggregate functions to be called later 
+    - Ex: `SELECT MAX(users.age) AS highest_age FROM users` will return a col named `highest_age` w/ the maximum age
+
+
+
+Primary Key = A specific column that uniquely identifies each record in a table
